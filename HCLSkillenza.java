@@ -4,8 +4,27 @@ import java.util.Scanner;
  * 
  * Draw given string into patterns of Z eg.
  *
- * a b c d e f a b c d e f a b c d e f a b c d e f a b c d e f a b c d e f a b c
- * d e f a b c d
+ a b c d e f 
+        a   
+      b     
+    c       
+  d         
+e f a b c d 
+        e   
+      f     
+    a       
+  b         
+c d e f a b 
+        c   
+      d     
+    e       
+  f         
+a b c d e f 
+        a   
+      b     
+    c       
+  d         
+e f a b c d
  *
  */
 
