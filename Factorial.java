@@ -3,17 +3,31 @@
  * challenge: 3
  */
 
-package self.practise;
+package anu.challenge.exercises;
 
 public class Factorial {
 
 	public static void main(String[] args) throws InterruptedException {
-		String line = "0";
+		int number = 10;
+		/**
+		 * factorial using loop
+		 */
 		int factorial = 1;
-		int num = Integer.parseInt(line);
-		for (int n = 1; n <= num; n++) {
+		for (int n = number - 1; n >= 1; n--) {
 			factorial = factorial * n;
 		}
-		System.out.println(factorial);
+		System.out.println("factorial using loop-> " + factorial);
+		/**
+		 * factorial using recursion
+		 */
+		int fact = factorial(number);
+		System.out.println("factorial using recusrion->" + fact);
+	}
+
+	static int factorial(int num) {
+		if (num == 0)
+			return 1;
+		else
+			return (num * factorial(num-1));
 	}
 }
