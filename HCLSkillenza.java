@@ -2,30 +2,10 @@ import java.util.Scanner;
 
 /**
  * 
- *	Draw given string into patterns of Z
- *	eg. 
+ * Draw given string into patterns of Z eg.
  *
-a b c d e f 
-        a   
-      b     
-    c       
-  d         
-e f a b c d 
-        e   
-      f     
-    a       
-  b         
-c d e f a b 
-        c   
-      d     
-    e       
-  f         
-a b c d e f 
-        a   
-      b     
-    c       
-  d         
-e f a b c d
+ * a b c d e f a b c d e f a b c d e f a b c d e f a b c d e f a b c d e f a b c
+ * d e f a b c d
  *
  */
 
@@ -34,12 +14,12 @@ public class HCLSkillenza {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
+		int t = sc.nextInt(); // no of test cases
 		for (int i = 0; i < t; i++) {
-			int l = sc.nextInt();
-			int h = sc.nextInt();
-			int n = sc.nextInt();
-			String str = sc.next();
+			int l = sc.nextInt(); // length of string
+			int h = sc.nextInt(); // height of Z
+			int n = sc.nextInt(); // number of Z
+			String str = sc.next(); // string
 
 			if (l >= 1 && l <= 100 && h >= 1 && h <= 20 && n >= 1 && n <= 20) {
 				int sizeX = h + 1;
